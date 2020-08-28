@@ -1,0 +1,24 @@
+{
+  "name": "fffutil-demo",
+  "version": "0.1.0",
+  "description": "fff util",
+  "main": "dist/index.cjs.js",
+  "module": "dist/index.es.js",
+  "jsdelivr": "dist/index.umd.js",
+  "unpkg": "dist/index.umd.js",
+  "scripts": {
+    "dev": "rollup -cw rollup.config.js --environment NODE_ENV:development",
+    "build": "rollup -c rollup.config.js --environment NODE_ENV:production"
+  },
+  "keywords": [
+    "js",
+    "util"
+  ],
+  "author": "Jay",
+  "license": "MIT",
+  "devDependencies": {
+    "rollup": "^2.26.6",
+    "rollup-plugin-json": "^4.0.0",
+    "rollup-plugin-terser": "^7.0.0"
+  }
+}
